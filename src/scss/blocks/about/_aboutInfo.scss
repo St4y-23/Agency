@@ -1,0 +1,53 @@
+.aboutInfo{
+  position: relative;
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.aboutInfo__inner{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.aboutInfo__image{
+  width: 30%;
+  height: 65vh;
+  overflow: hidden;
+  margin-right: 5%;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: linear .3s;
+  }
+}
+
+.aboutInfo__box{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.aboutInfo__box-title,
+.aboutInfo__box-text{
+  margin-bottom: 2rem;
+}
+
+.aboutInfo__box-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.aboutInfo__box-wrapper-num{
+  color: $red;
+  font-size: 3.5rem;
+  margin-top: -.5rem;
+  margin-right: 0.5rem;
+}
+

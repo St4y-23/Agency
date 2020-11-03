@@ -1,0 +1,92 @@
+.team{
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.team__box{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team__suptitle{
+  color: $red;
+  margin-bottom: 1rem;
+}
+
+.team__slider{
+  overflow: visible;
+}
+
+.team__slide{
+  position: relative;
+  width: 20vw;
+  height: 30vw;
+  // transition: linear .3s;
+
+  &:nth-child(even){
+    margin-top: 3rem;
+  }
+
+  &:hover{
+    box-shadow: 0px 0px 10px 10px rgba(65, 65, 65, 0.3);
+
+    .team__slide-image{
+      .rect{
+        background-color: rgba(#000, .1);
+      }
+      img{
+        transform: scale(1.05);
+      }
+    }
+
+    .team__slide-firstName{
+      margin-left: -20px;
+    }
+
+    .team__slide-lastName{
+      margin-left: 60px;
+      color: $red;
+    }
+  }
+}
+
+.team__slide-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: linear .3s;
+  }
+
+  .rect{
+    background-color: rgba(#000, .5);
+    transition: linear .3s;
+  }
+}
+
+.team__slide-box{
+  position: absolute;
+  top: 70%;
+  left: -25%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  z-index: 3;
+}
+
+.team__slide-firstName{
+  transition: linear .3s;
+}
+
+.team__slide-lastName{
+  margin-left: 40px;
+  transition: linear .3s;
+}

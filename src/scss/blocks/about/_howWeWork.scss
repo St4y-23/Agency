@@ -1,0 +1,97 @@
+.howWeWork{
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.howWeWork__box{
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.howWeWork__suptitle{
+  color: $red;
+  margin-bottom: 1rem;
+}
+
+.howWeWork__title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.howWeWork__inner{
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 1px;
+    background-color: #fff;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.howWeWork__item{
+  width: 25%;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.howWeWork__item-logo{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 50%;
+}
+
+.howWeWork__item-num{
+  position: absolute;
+  color: #000;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-color: rgb(143, 131, 131);
+    @include center;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 25px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
+.howWeWork__item-title{
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}

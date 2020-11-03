@@ -1,0 +1,21 @@
+.clients{
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.clients__inner{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.clients__item{
+  width: 20%;
+  padding: 0 3%;
+
+  img{
+    filter: invert(1);
+  }
+}
