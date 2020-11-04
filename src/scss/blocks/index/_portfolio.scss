@@ -7,16 +7,15 @@
 .portfolio__inner{
   width: 100%;
   height: 100%;
-  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
 }
 
 .portfolio__slider{
   overflow: visible;
   margin-left: 1.5rem;
-}
-
-.portfolio__box{
-  margin-bottom: 2rem;
 }
 
 .portfolio__item{
@@ -27,7 +26,6 @@
   justify-content: flex-end;
   position: relative;
   color: #fff;
-  // overflow: hidden;
   transition: linear .2s;
   
 
@@ -36,7 +34,6 @@
   }
 
   &:hover{
-    // box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
 
     .portfolio__item-img{
       .rect{
@@ -113,7 +110,6 @@
 }
 
 .portfolio__item-name{
-  // padding-right: 1rem;
   font-size: 2rem;
   text-transform: capitalize;
   transition: linear .3s;
@@ -130,7 +126,6 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  // padding-right: 1rem;
   margin-bottom: 1rem;
   opacity: 1;
   display: flex;
@@ -157,9 +152,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  // overflow: hidden;
-
-
   transform-style: preserve-3d;
 }
 
