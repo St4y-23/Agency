@@ -35,7 +35,7 @@
 
   &:hover{
     .services__rect{
-      background-color: rgba(#000, .4);
+      background-color: rgba(#000, .2);
     }
     .services__item-title,
     .services__item-text{
@@ -52,7 +52,7 @@
 
 .services__item-box{
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 45px;
   position: absolute;
   bottom: 10%;
   left: 0;
@@ -67,8 +67,8 @@
 }
 
 .services__item-title{
-  font-size: 1.5rem;
-  margin-bottom: .5rem;
+  font-size: 1.3rem;
+  margin-bottom: .3rem;
   transition: ease-in-out .25s;
   transform: translateY(110%);
   opacity: 0;

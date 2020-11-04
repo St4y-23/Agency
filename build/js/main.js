@@ -56,18 +56,18 @@ $(function () {
 	});
 
 	// Vegas
-	// $('.intro').vegas({
-	// 	transition: 'fade2',
-	// 	animation: 'random',
-	// 	timer: false,
-	// 	delay: 8000,
-	// 	transitionDuration: 2000,
-	// 	slides: [
-	// 		{ src: '../img/0013.jpg' },
-	// 		{ src: '../img/07.jpg' },
-	// 		{ src: '../img/0012.jpg' }
-	// 	]
-	// });
+	$('.intro').vegas({
+		transition: 'fade2',
+		animation: 'random',
+		timer: false,
+		delay: 8000,
+		transitionDuration: 2000,
+		slides: [
+			{ src: '../img/0013.jpg' },
+			{ src: '../img/07.jpg' },
+			{ src: '../img/0012.jpg' }
+		]
+	});
 
 
 
@@ -149,15 +149,29 @@ $(function () {
 
 
 
+	if (window.matchMedia("(min-width: 1440px)").matches) {
 
+		$(window).on("scroll load resize", function () {
+			$(".box__pages").css("opacity", 1 - $(window).scrollTop() / 350);
+		});
+	
+		$(window).on("scroll load resize", function () {
+			$(".bgText--pages").css("opacity", 1 - $(window).scrollTop() / 500);
+		});
 
-	$(window).on("scroll load resize", function () {
-		$(".box__pages").css("opacity", 1 - $(window).scrollTop() / 350);
-	});
+	} else {
 
-	$(window).on("scroll load resize", function () {
-		$(".bgText--pages").css("opacity", 1 - $(window).scrollTop() / 500);
-	});
+		$(window).on("scroll load resize", function () {
+			$(".box__pages").css("opacity", 1 - $(window).scrollTop() / 200);
+		});
+	
+		$(window).on("scroll load resize", function () {
+			$(".bgText--pages").css("opacity", 1 - $(window).scrollTop() / 300);
+		});
+
+	}
+
+	
 
 
 	// Popup
