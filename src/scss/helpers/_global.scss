@@ -160,7 +160,7 @@ body{
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(#000, .6);
+  background-color: rgba(#000, .4);
   transition: linear .5s;
 }
 
@@ -464,7 +464,7 @@ body{
 
 .portfolio .swiper-button-next, 
 .portfolio .swiper-button-prev {
-  top: 70%;
+  top: 80%;
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {

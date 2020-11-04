@@ -51,7 +51,7 @@ $(function () {
 		autoScrolling: true,
 		scrollBar: false,
 		navigation: true,
-		navigationTooltips: ['Home', 'About', 'Services', 'Works', 'Contact'],
+		navigationTooltips: ['Home', 'About', 'Services', 'Works', 'Contacts'],
 		showActiveTooltip: true,
 	});
 
@@ -90,11 +90,28 @@ $(function () {
 	var mySwiper2 = new Swiper('.portfolio__slider', {
 		loop: true,
 		slidesPerView: 'auto',
-		spaceBetween: 60,
+		spaceBetween: 40,
+		centeredSlides: true,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		breakpoints: {
+			// when window width is >= 320px
+			320: {
+				// slidesPerView: 2,
+				// spaceBetween: 20
+			},
+			// when window width is >= 480px
+			480: {
+				// slidesPerView: 3,
+				// spaceBetween: 30
+			},
+			// when window width is >= 640px
+			701: {
+				spaceBetween: 60,
+			}
+		}
 	});
 
 
