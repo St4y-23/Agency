@@ -1,3 +1,6 @@
+.services{
+  overflow-x: hidden;
+}
 
 .services__wrapper{
   width: 100%;
@@ -86,11 +89,12 @@
 // Popup
 .services__popup{
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #38383f;  
   background: rgb(27, 27, 27);  
   position: relative;
+  overflow: hidden;
 }
 
 .services__popup-slider{
