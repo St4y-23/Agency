@@ -2046,6 +2046,10 @@ svg.pulse-svg .third-circle {
   transition: linear .3s;
 }
 
+.services {
+  overflow-x: hidden;
+}
+
 .services__wrapper {
   width: 100%;
   height: 100%;
@@ -2129,11 +2133,12 @@ svg.pulse-svg .third-circle {
 
 .services__popup {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #38383f;
   background: #1b1b1b;
   position: relative;
+  overflow: hidden;
 }
 
 .services__popup-slider {
@@ -2358,6 +2363,7 @@ svg.pulse-svg .third-circle {
   flex-direction: column;
   justify-content: center;
   padding: 1% 0;
+  overflow: hidden;
 }
 
 .contacts .bgText {
@@ -3146,6 +3152,7 @@ svg.pulse-svg .third-circle {
     width: 100%;
   }
   .services__col {
+    padding: 0;
     width: 100%;
     height: 120vw;
     margin-top: 3rem !important;
