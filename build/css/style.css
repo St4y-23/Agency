@@ -2831,7 +2831,7 @@ svg.pulse-svg .third-circle {
   }
   .services__popup .swiper-button-next,
   .services__popup .swiper-button-prev {
-    top: 70%;
+    top: 60%;
   }
   .services__popup .swiper-container-horizontal > .swiper-pagination-progressbar,
   .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {

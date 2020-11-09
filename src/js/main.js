@@ -74,7 +74,7 @@ $(function () {
 
 
 	var mySwiper = new Swiper('.ourServices__slider', {
-		loop: true,
+		loop: false,
 		slidesPerView: 'auto',
 		pagination: {
 			el: '.swiper-pagination',
@@ -88,7 +88,7 @@ $(function () {
 	});
 
 	var mySwiper2 = new Swiper('.portfolio__slider', {
-		loop: true,
+		loop: false,
 		slidesPerView: 'auto',
 		spaceBetween: 40,
 		centeredSlides: true,
@@ -110,6 +110,7 @@ $(function () {
 			// when window width is >= 640px
 			701: {
 				spaceBetween: 60,
+				centeredSlides: false,
 			}
 		}
 	});
