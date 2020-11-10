@@ -387,7 +387,7 @@
   }
 }
 
-@media (max-height: 665px) {
+@media (max-height: 650px) {
   .aboutUs__inner {
     margin: 0;
   }
@@ -843,6 +843,12 @@
   }
   .works__col {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .works__item:hover{
+    
   }
 }
 

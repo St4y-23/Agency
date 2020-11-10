@@ -2224,12 +2224,14 @@ svg.pulse-svg .third-circle {
   margin-top: 60vh;
   margin-bottom: 10%;
   padding: 0 5%;
+  overflow-x: hidden;
 }
 
 .works__col {
   width: 33.33333%;
   height: auto;
   padding: 0 2rem;
+  overflow-x: hidden;
 }
 
 .works__item {
@@ -2353,6 +2355,15 @@ svg.pulse-svg .third-circle {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
+  right: 0;
+  padding-right: 0;
+}
+
+.mfp-counter {
+  right: 10px;
 }
 
 .contacts {
@@ -2783,7 +2794,7 @@ svg.pulse-svg .third-circle {
   }
 }
 
-@media (max-height: 665px) {
+@media (max-height: 650px) {
   .aboutUs__inner {
     margin: 0;
   }
