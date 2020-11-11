@@ -133,10 +133,9 @@
 
   #fp-nav ul li:hover a span,
   .fp-slidesNav ul li:hover a span {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
-    background: rgba($red, 0.7);
   }
 
   // Arrows
@@ -189,9 +188,9 @@
 }
 
 // header  /////////////////////////
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .header__logo {
-    top: 30px;
+    top: 20px;
     left: 30px;
   }
 
@@ -207,7 +206,7 @@
 
 @media (max-width: 500px) {
   .header__logo {
-    top: 20px;
+    top: 10px;
     left: 20px;
   }
 
@@ -274,6 +273,8 @@
 @media (max-width: 1200px) {
   .aboutUs__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .aboutUs__wrapper {
@@ -297,11 +298,39 @@
   .aboutUs__box {
     width: 100%;
     z-index: 2;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 8%;
+  }
+
+  .aboutUs__suptitle {
+    padding: 0;
+    display: inline-block;
+
+    &::before {
+      width: 20px;
+      height: 1px;
+      left: -30px;
+      top: 49%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 1px;
+      right: -27px;
+      background-color: $red;
+      top: 49%;
+      transform: translateY(-50%);
+    }
   }
 
   .aboutUs__text {
     max-width: 700px;
-    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
   }
 
   .aboutUs__items {
@@ -346,38 +375,7 @@
     font-size: 3.7rem;
   }
 
-  .aboutUs__box {
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 8%;
-  }
-
-  .aboutUs__text {
-    padding: 0;
-  }
-
-  .aboutUs__suptitle {
-    padding: 0;
-    display: inline-block;
-
-    &::before {
-      width: 20px;
-      height: 1px;
-      left: -30px;
-      top: 49%;
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 20px;
-      height: 1px;
-      right: -27px;
-      background-color: $red;
-      top: 49%;
-      transform: translateY(-50%);
-    }
-  }
+  
 }
 
 // MAX-HEIGHT /////////////////////////
@@ -610,6 +608,8 @@
 @media (max-width: 1024px) {
   .portfolio__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .portfolio__item-box {
@@ -668,6 +668,8 @@
 @media (max-width: 1200px) {
   .ourContacts__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .ourContacts__title {
@@ -704,7 +706,7 @@
   }
 
   .ourContacts__map {
-    width: 90%;
+    width: 100%;
     height: 50%;
   }
 
@@ -843,12 +845,6 @@
   }
   .works__col {
     padding: 0 1rem;
-  }
-}
-
-@media (max-width: 1366px) {
-  .works__item:hover{
-    
   }
 }
 

@@ -236,7 +236,7 @@ body{
   width: 20%;
   height: 100%;
   background-color: transparent;
-  border-right: 1px solid rgba(rgb(110, 110, 110), 0.1);
+  border-right: 1px solid rgba(rgb(110, 110, 110), 0.2);
   &:last-child{
     border-right: none;
   }
@@ -299,6 +299,12 @@ body{
   background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 100%);
 }
 
+
+// Animsition preloader
+.animsition-overlay-slide{
+  background-color: #000;
+  z-index: 100;
+}
 
 
 

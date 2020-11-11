@@ -34,6 +34,7 @@ gulp.task('style', function () {
 		'node_modules/magnific-popup/dist/magnific-popup.css',
 		'node_modules/tingle.js/dist/tingle.css',
 		'node_modules/vegas/dist/vegas.css',
+		'node_modules/animsition/dist/css/animsition.css'
 	])
 		.pipe(concat('libs.min.css'))
 		.pipe(cssmin())
@@ -50,6 +51,7 @@ gulp.task('script', function () {
 		'node_modules/tingle.js/dist/tingle.js',
 		'node_modules/tilt.js/dest/tilt.jquery.js',
 		'node_modules/vegas/dist/vegas.js',
+		'node_modules/animsition/dist/js/animsition.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
