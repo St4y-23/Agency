@@ -9,6 +9,7 @@
   "author": "St4y",
   "license": "ISC",
   "devDependencies": {
+    "animsition": "^4.0.2",
     "browser-sync": "^2.26.12",
     "cssmin": "^0.4.3",
     "gsap": "^3.2.6",

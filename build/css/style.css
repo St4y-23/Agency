@@ -230,7 +230,7 @@ body {
   width: 20%;
   height: 100%;
   background-color: transparent;
-  border-right: 1px solid rgba(110, 110, 110, 0.1);
+  border-right: 1px solid rgba(110, 110, 110, 0.2);
 }
 
 .row:last-child {
@@ -285,6 +285,11 @@ body {
   left: 0;
   background: black;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, black 100%);
+}
+
+.animsition-overlay-slide {
+  background-color: #000;
+  z-index: 100;
 }
 
 #fp-nav {
@@ -2388,7 +2393,7 @@ svg.pulse-svg .third-circle {
 }
 
 .contacts__box .text {
-  max-width: 50%;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -2581,10 +2586,9 @@ svg.pulse-svg .third-circle {
   }
   #fp-nav ul li:hover a span,
   .fp-slidesNav ul li:hover a span {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
-    background: rgba(179, 28, 33, 0.7);
   }
   :root {
     --swiper-navigation-size: 30px;
@@ -2626,9 +2630,9 @@ svg.pulse-svg .third-circle {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .header__logo {
-    top: 30px;
+    top: 20px;
     left: 30px;
   }
   .nav-but-wrap {
@@ -2642,7 +2646,7 @@ svg.pulse-svg .third-circle {
 
 @media (max-width: 500px) {
   .header__logo {
-    top: 20px;
+    top: 10px;
     left: 20px;
   }
   .nav-but-wrap {
@@ -2698,6 +2702,8 @@ svg.pulse-svg .third-circle {
 @media (max-width: 1200px) {
   .aboutUs__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .aboutUs__wrapper {
     justify-content: center;
@@ -2717,10 +2723,35 @@ svg.pulse-svg .third-circle {
   .aboutUs__box {
     width: 100%;
     z-index: 2;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 8%;
+  }
+  .aboutUs__suptitle {
+    padding: 0;
+    display: inline-block;
+  }
+  .aboutUs__suptitle::before {
+    width: 20px;
+    height: 1px;
+    left: -30px;
+    top: 49%;
+  }
+  .aboutUs__suptitle::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    right: -27px;
+    background-color: #b31c21;
+    top: 49%;
+    transform: translateY(-50%);
   }
   .aboutUs__text {
     max-width: 700px;
-    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
   }
   .aboutUs__items {
     height: auto;
@@ -2757,34 +2788,6 @@ svg.pulse-svg .third-circle {
 @media (max-width: 650px) {
   .aboutUs__bgText {
     font-size: 3.7rem;
-  }
-  .aboutUs__box {
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 8%;
-  }
-  .aboutUs__text {
-    padding: 0;
-  }
-  .aboutUs__suptitle {
-    padding: 0;
-    display: inline-block;
-  }
-  .aboutUs__suptitle::before {
-    width: 20px;
-    height: 1px;
-    left: -30px;
-    top: 49%;
-  }
-  .aboutUs__suptitle::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 1px;
-    right: -27px;
-    background-color: #b31c21;
-    top: 49%;
-    transform: translateY(-50%);
   }
 }
 
@@ -2978,6 +2981,8 @@ svg.pulse-svg .third-circle {
 @media (max-width: 1024px) {
   .portfolio__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .portfolio__item-box::before {
     height: 2px;
@@ -3025,6 +3030,8 @@ svg.pulse-svg .third-circle {
 @media (max-width: 1200px) {
   .ourContacts__bgText {
     font-size: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .ourContacts__title {
     font-size: 3rem;
@@ -3054,7 +3061,7 @@ svg.pulse-svg .third-circle {
     margin-bottom: 0.2rem;
   }
   .ourContacts__map {
-    width: 90%;
+    width: 100%;
     height: 50%;
   }
   .ourContacts__adress,
