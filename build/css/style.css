@@ -47,6 +47,12 @@ body {
   background: linear-gradient(to right, #0d0d0f, #0e0404);
 }
 
+.animsition-overlay-slide {
+  background: #111114;
+  background: linear-gradient(to right, #0d0d0f, #0e0404);
+  z-index: 100;
+}
+
 .content {
   overflow-x: hidden;
   width: 100vw;
@@ -285,11 +291,6 @@ body {
   left: 0;
   background: black;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, black 100%);
-}
-
-.animsition-overlay-slide {
-  background-color: #000;
-  z-index: 100;
 }
 
 #fp-nav {
