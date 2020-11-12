@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-	// $('.preloader').delay(500).fadeToggle(500);
+	// $('.darkBox').delay(100).fadeToggle(100);
 
 
 	if (window.matchMedia("(min-width: 851px)").matches) {
@@ -45,7 +45,9 @@ $(function () {
     overlayClass : 'animsition-overlay-slide',
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
-  });
+	});
+	
+	
 
 	
 	// Menu
