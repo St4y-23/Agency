@@ -5,25 +5,19 @@
 
 .howWeWork__box{
   text-align: center;
-  max-width: 50%;
+  max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-.howWeWork__suptitle{
-  color: $red;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .howWeWork__title{
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .howWeWork__inner{
   display: flex;
   justify-content: center;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
   position: relative;
 
@@ -33,7 +27,7 @@
     width: 75%;
     height: 1px;
     background-color: #fff;
-    top: 160px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -50,8 +44,8 @@
 
 .howWeWork__item-logo{
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -67,12 +61,13 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
+  font-size: .8rem;
 
   &::before{
     position: absolute;
     content: '';
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: rgb(143, 131, 131);
     @include center;
     border-radius: 50%;
@@ -88,10 +83,11 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
+    z-index: -2;
   }
 }
 
 .howWeWork__item-title{
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin-bottom: .5rem;
 }

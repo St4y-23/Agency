@@ -37,6 +37,7 @@
   transform-style: preserve-3d;
 
   &:hover{
+    box-shadow: 0 0 30px 5px rgba($red, .3);
     .services__rect{
       background-color: rgba(#000, .2);
     }

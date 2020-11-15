@@ -8,18 +8,10 @@
   margin-bottom: 2rem;
 }
 
-.features__suptitle{
-  color: $red;
-}
-
-.features__title{
-  font-size: 2rem;
-}
-
 .features__inner{
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -29,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 5%;
+  // padding: 0 2%;
   border-right: 1px solid rgba(#fff, .4);
 
   &:last-child{
@@ -38,13 +30,14 @@
 }
 
 .features__item-num{
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   margin-bottom: 1rem;
-  color: #923a11;
+  color: $red;
 }
 
 .features__item-text{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: rgba(#fff, .5);
+  color: #fff;
 }
