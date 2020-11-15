@@ -8,11 +8,6 @@
   margin-bottom: 4rem;
 }
 
-.team__suptitle{
-  color: $red;
-  margin-bottom: 1rem;
-}
-
 .team__slider{
   overflow: visible;
 }
@@ -21,14 +16,13 @@
   position: relative;
   width: 20vw;
   height: 30vw;
-  // transition: linear .3s;
 
   &:nth-child(even){
     margin-top: 3rem;
   }
 
   &:hover{
-    box-shadow: 0px 0px 10px 10px rgba(65, 65, 65, 0.3);
+    box-shadow: 0 0 30px 5px rgba($red, .2);
 
     .team__slide-image{
       .rect{

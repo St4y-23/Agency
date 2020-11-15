@@ -19,6 +19,42 @@
   transition: linear 0.2s;
 }
 
+.aboutInfo__icon{
+  width: 17px;
+  height: 17px;
+  fill: $red;
+  transition: linear 0.2s;
+  position: absolute;
+  @include center;
+}
+
+.aboutServices__icon{
+  width: 20px;
+  height: 20px;
+  fill: $red;
+  transition: linear 0.2s;
+  position: absolute;
+  @include center;
+}
+
+.aboutServices__link-icon{
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  transition: linear 0.2s;
+  margin-left: 10px;
+  transform: translateY(3px);
+}
+
+.qualities__icon{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  transition: linear 0.2s;
+  @include center;
+}
+
 .zoom__icon{
   width: 85px;
   height: 85px;
@@ -27,22 +63,22 @@
 }
 
 .advantages__icon{
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   fill: $red;
   transition: linear 0.2s;
 }
 
 .howWeWork__icon{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   fill: $red;
   transition: linear 0.2s;
 }
 
 .testimonials__icon{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   fill: $red;
   transition: linear 0.2s;
 }

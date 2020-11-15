@@ -1,6 +1,5 @@
 .aboutInfo{
   position: relative;
-  margin-top: 25%;
   margin-bottom: 10%;
 }
 
@@ -39,15 +38,35 @@
   margin-bottom: 2rem;
 }
 
-.aboutInfo__box-wrapper{
+
+.aboutInfo__contacts{
   display: flex;
   align-items: center;
 }
 
-.aboutInfo__box-wrapper-num{
-  color: $red;
-  font-size: 3.5rem;
-  margin-top: -.5rem;
-  margin-right: 0.5rem;
+.aboutInfo__contacts-box{
+  display: flex;
+  align-items: center;
+
+  &:last-child{
+    margin-left: 50px;
+  }
 }
+
+.aboutInfo__contacts-icon{
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+
+
+.aboutInfo__contacts-text{
+  font-size: 0.8rem;
+  color: rgba(#fff, .5);
+}
+
+
 

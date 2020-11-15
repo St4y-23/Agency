@@ -25,31 +25,28 @@ $(function () {
 
 	// Animsition
 	$(".animsition-overlay").animsition({
-    inClass: 'overlay-slide-in-top',
-    outClass: 'overlay-slide-out-top',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : true,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
+		inClass: 'overlay-slide-in-top',
+		outClass: 'overlay-slide-out-top',
+		inDuration: 1500,
+		outDuration: 800,
+		linkElement: '.animsition-link',
+		loading: true,
+		loadingParentElement: 'body', 
+		loadingClass: 'animsition-loading',
+		loadingInner: '', // e.g '<img src="loading.svg" />'
+		timeout: false,
+		timeoutCountdown: 5000,
+		onLoadEvent: true,
+		browser: ['animation-duration', '-webkit-animation-duration'],
+		overlay: true,
+		overlayClass: 'animsition-overlay-slide',
+		overlayParentElement: 'body',
+		transition: function (url) { window.location.href = url; }
 	});
-	
-	
 
-	
+
+
+
 	// Menu
 	var app = function () {
 		var body = undefined;
@@ -80,7 +77,28 @@ $(function () {
 		navigation: true,
 		navigationTooltips: ['Home', 'About', 'Services', 'Works', 'Contacts'],
 		showActiveTooltip: true,
+
+		onLeave: function (origin, destination, direction) {
+
+			// about us
+			if (destination == 2) {
+				var tl = gsap.timeline({ defaults: { duration: 1 } });
+						tl.from(".aboutUs__suptitle", { delay: .5, opacity: 0, y: '100%' })
+							.from(".aboutUs__title", { y: '20%', opacity: 0 }, "-=.5")
+							.from(".aboutUs__text", { y: '20%', opacity: 0 }, "-=.7")
+							.from(".aboutUs__btn", { y: '50%', opacity: 0 }, "-=.7")
+							.from(".aboutUs__image", { x: '100%' }, "-=1.7")
+							.from(".aboutUs__image-dark", { width: '100%' }, "-=.7")
+							.from(".aboutUs__item-1", { y: '20%', opacity: 0 }, "-=1")
+							.from(".aboutUs__item-2", { y: '20%', opacity: 0 }, "-=.8")
+							.from(".aboutUs__item-3", { y: '20%', opacity: 0 }, "-=.8")
+							.from(".aboutUs__item-4", { y: '20%', opacity: 0 }, "-=.8")
+
+			}
+
+		}
 	});
+
 
 	// Vegas
 	$('.intro').vegas({
@@ -111,7 +129,7 @@ $(function () {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
-		
+
 	});
 
 	var mySwiper2 = new Swiper('.portfolio__slider', {
@@ -124,7 +142,7 @@ $(function () {
 			prevEl: '.swiper-button-prev',
 		},
 		breakpoints: {
-			
+
 			701: {
 				spaceBetween: 60,
 			},
@@ -174,7 +192,7 @@ $(function () {
 		$(window).on("scroll load resize", function () {
 			$(".box__pages").css("opacity", 1 - $(window).scrollTop() / 350);
 		});
-	
+
 		$(window).on("scroll load resize", function () {
 			$(".bgText--pages").css("opacity", 1 - $(window).scrollTop() / 500);
 		});
@@ -184,14 +202,14 @@ $(function () {
 		$(window).on("scroll load resize", function () {
 			$(".box__pages").css("opacity", 1 - $(window).scrollTop() / 200);
 		});
-	
+
 		$(window).on("scroll load resize", function () {
 			$(".bgText--pages").css("opacity", 1 - $(window).scrollTop() / 300);
 		});
 
 	}
 
-	
+
 
 
 	// Popup
