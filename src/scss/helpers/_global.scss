@@ -153,7 +153,7 @@ body {
   font-style: italic;
   font-family: "Cormorant", serif;
   color: $grey;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .trans {
@@ -185,6 +185,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
+  }
+  &--about{
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7rem;
   }
 }
 

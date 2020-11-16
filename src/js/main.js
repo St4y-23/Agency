@@ -1,16 +1,30 @@
 $(window).on('load', function () {
 	// $('.darkBox').delay(100).fadeToggle(100);
+	$('.intro__title').addClass('active');
+
+	// Intro
+	var tl0 = gsap.timeline({ defaults: { duration: 1 } });
+			tl0.to(".intro__stick", { delay: 3.5, width: '60%' })
+			tl0.from(".intro__subtitle", { x: '-5%', opacity: 0 }, "-=.8")
+			tl0.from(".intro__btn", { x: '-20%', opacity: 0 }, "-=.9")
+			tl0.from(".intro__arrow", { y: '-50%', opacity: 0 }, "-=.7")
+			tl0.from("#fp-nav", { x: '50%', opacity: 0 }, "-=1")
+
+	// Header & Footer
+	var tl1 = gsap.timeline({ defaults: { duration: 1 } });
+			tl1.from(".header__logo", { delay: 1, y: '50%', opacity: 0 })
+			tl1.from(".nav-but-wrap", { y: '50%', opacity: 0 }, "-=1")
+			tl1.from(".footer__copy", { y: '50%', opacity: 0 }, "-=.8")
+			tl1.from(".social__link", { y: '20%', opacity: 0, stagger: 0.2 }, "-=.8")
+
+
 
 
 	if (window.matchMedia("(min-width: 851px)").matches) {
 
 		// var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
 
-		// var tl = gsap.timeline({ defaults: { duration: 1 } });
-		// tl.from(".intro__bg", { delay: 1, x: '-100%' })
-		//   .from(".header__bg", { x: '-100%', opacity: 0 }, "-=.5")
-
-
+		
 
 	} else {
 
@@ -82,17 +96,14 @@ $(function () {
 
 			// about us
 			if (destination == 2) {
-				var tl = gsap.timeline({ defaults: { duration: 1 } });
-						tl.from(".aboutUs__suptitle", { delay: .5, opacity: 0, y: '100%' })
+				var tl2 = gsap.timeline({ defaults: { duration: 1 } });
+						tl2.from(".aboutUs__suptitle", { delay: .5, opacity: 0, y: '100%' })
 							.from(".aboutUs__title", { y: '20%', opacity: 0 }, "-=.5")
-							.from(".aboutUs__text", { y: '20%', opacity: 0 }, "-=.7")
-							.from(".aboutUs__btn", { y: '50%', opacity: 0 }, "-=.7")
+							.from(".aboutUs__text", { stagger: 0.2, y: '20%', opacity: 0 }, "-=.7")
+							.from(".aboutUs__btn", { y: '40%', opacity: 0 }, "-=.8")
 							.from(".aboutUs__image", { x: '100%' }, "-=1.7")
 							.from(".aboutUs__image-dark", { width: '100%' }, "-=.7")
-							.from(".aboutUs__item-1", { y: '20%', opacity: 0 }, "-=1")
-							.from(".aboutUs__item-2", { y: '20%', opacity: 0 }, "-=.8")
-							.from(".aboutUs__item-3", { y: '20%', opacity: 0 }, "-=.8")
-							.from(".aboutUs__item-4", { y: '20%', opacity: 0 }, "-=.8")
+							.from(".aboutUs__item", { stagger: 0.2, y: '20%', opacity: 0 }, "-=1.5")
 
 			}
 
@@ -300,7 +311,12 @@ $(function () {
 
 
 
+// Stroke-offset = path
+   const logo = document.querySelectorAll("#logo path");
 
+   for(let i = 0; i<logo.length; i++){
+     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+   }
 
 
 });

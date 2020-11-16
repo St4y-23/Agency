@@ -8,7 +8,6 @@
   left: 0;
 }
 
-
 .aboutUs__wrapper{
   display: flex;
   flex-direction: column;
@@ -41,7 +40,7 @@
 }
 
 .aboutUs__btn{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 
@@ -63,7 +62,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 80%;
+  width: 70%;
   height: 20%;
   margin: 0 auto;
 }
@@ -77,14 +76,14 @@
 
 .aboutUs__item-num{
   color: $red;
-  font-size: 3.7rem;
+  font-size: 3rem;
   line-height: 1;
   margin-top: -1rem;
   margin-right: .5rem;
 }
 
 .aboutUs__item-text{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 

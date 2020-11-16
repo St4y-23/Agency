@@ -232,31 +232,31 @@
 }
 
 // intro  /////////////////////////
-@media (max-width: 1200px) {
-  .intro__title {
-    font-size: 6rem;
+@media (max-width: 1440px) {
+  #logo{
+    height: 150px;
   }
-  .intro__subtitle {
-    margin-top: -20px;
+  .intro__btn{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #logo{
+    height: 100px;
+  }
+  .intro__stick{
+    height: 5px;
+  }
+  .intro__btn{
+    margin-top: 15px;
   }
 }
 
 @media (max-width: 650px) {
-  .intro__box {
-    margin-top: 10%;
+  #logo{
+    height: 50px;
   }
-
-  .intro__title {
-    font-size: 3rem;
-
-    &::before {
-      height: 4px;
-    }
-  }
-  .intro__subtitle {
-    margin-top: -10px;
-  }
-
   .arrows {
     width: 40px;
     height: 52px;
@@ -806,7 +806,7 @@
 
   .services__col {
     width: 50%;
-    height: 55vw;
+    height: 65vw;
     margin-top: 5rem;
 
     &:nth-child(odd) {
@@ -832,8 +832,12 @@
   .services__col {
     padding: 0;
     width: 100%;
-    height: 120vw;
+    height: 140vw;
     margin-top: 3rem !important;
+
+    &:last-child{
+      margin-bottom: 10%;
+    }
   }
 }
 
