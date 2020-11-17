@@ -105,8 +105,10 @@
   position: relative;
 }
 
-.intro__btn{
+.intro__btn-box{
+  position: relative;
   margin-top: 50px;
+  z-index: 2;
 }
 
 .intro__arrow {

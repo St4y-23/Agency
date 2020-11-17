@@ -74,7 +74,7 @@
     font-size: 0.9rem;
   }
 
-  .intro__btn {
+  .intro__btn-box {
     margin-top: 25px;
   }
 
@@ -194,7 +194,7 @@
     left: 30px;
   }
 
-  .nav-but-wrap {
+  .menu {
     top: 30px;
     right: 30px;
   }
@@ -210,7 +210,7 @@
     left: 20px;
   }
 
-  .nav-but-wrap {
+  .menu {
     top: 20px;
     right: 20px;
   }
@@ -236,7 +236,7 @@
   #logo{
     height: 150px;
   }
-  .intro__btn{
+  .intro__btn-box{
     margin-top: 30px;
   }
 }
@@ -248,7 +248,7 @@
   .intro__stick{
     height: 5px;
   }
-  .intro__btn{
+  .intro__btn-box{
     margin-top: 15px;
   }
 }
@@ -272,9 +272,12 @@
 
 @media (max-width: 1200px) {
   .aboutUs__bgText {
-    font-size: 8rem;
+    
     left: 50%;
     transform: translateX(-50%);
+    span{
+      font-size: 8rem;
+    }
   }
 
   .aboutUs__wrapper {
@@ -358,7 +361,10 @@
 
 @media (max-width: 800px) {
   .aboutUs__bgText {
-    font-size: 6rem;
+    
+    span{
+      font-size: 6rem;
+    }
   }
 
   .aboutUs__title {
@@ -372,7 +378,10 @@
 
 @media (max-width: 650px) {
   .aboutUs__bgText {
-    font-size: 3.7rem;
+    
+    span{
+      font-size: 3.7rem;
+    }
   }
 
   
@@ -607,9 +616,11 @@
 
 @media (max-width: 1024px) {
   .portfolio__bgText {
-    font-size: 8rem;
     left: 50%;
     transform: translateX(-50%);
+    span{
+      font-size: 8rem;
+    }
   }
 
   .portfolio__item-box {
@@ -640,7 +651,9 @@
 
 @media (max-width: 769px) {
   .portfolio__bgText {
-    font-size: 5rem;
+    span{
+      font-size: 5rem;
+    }
   }
 
   .portfolio__item {
@@ -667,9 +680,11 @@
 // Our Contacts  /////////////////////////
 @media (max-width: 1200px) {
   .ourContacts__bgText {
-    font-size: 8rem;
     left: 50%;
     transform: translateX(-50%);
+    span{
+      font-size: 8rem;
+    }
   }
 
   .ourContacts__title {
@@ -724,7 +739,9 @@
 
 @media (max-width: 760px) {
   .ourContacts__bgText {
-    font-size: 5rem;
+    span{
+      font-size: 5rem;
+    }
   }
 
   .ourContacts__title {
@@ -754,7 +771,9 @@
 
 @media (max-width: 500px) {
   .ourContacts__bgText {
-    font-size: 3rem;
+    span{
+      font-size: 3rem;
+    }
   }
 }
 
@@ -801,7 +820,9 @@
 
 @media (max-width: 1024px) {
   .services__bgText {
-    font-size: 8rem;
+    span{
+      font-size: 8rem;
+    }
   }
 
   .services__col {
@@ -817,7 +838,9 @@
 
 @media (max-width: 650px) {
   .services__bgText {
-    font-size: 4rem;
+    span{
+      font-size: 4rem;
+    }
   }
 
   .services__inner {
@@ -875,7 +898,9 @@
 
 @media (max-width: 768px) {
   .works__bgText {
-    font-size: 9rem;
+    span{
+      font-size: 9rem;
+    }
   }
 
   .works__inner {
@@ -891,7 +916,9 @@
 
 @media (max-width: 600px) {
   .works__bgText {
-    font-size: 5rem;
+    span{
+      font-size: 5rem;
+    }
   }
 
   .works__inner {
@@ -911,7 +938,9 @@
 // Contacts  /////////////////////////
 @media (max-width: 1200px) {
   .contacts__bgText{
-    font-size: 9rem;
+    span{
+      font-size: 9rem;
+    }
   }
 
   .contacts__box{
@@ -934,7 +963,9 @@
 
 @media (max-width: 760px) {
   .contacts__bgText{
-    font-size: 5rem;
+    span{
+      font-size: 5rem;
+    }
   }
 
   .contacts__box{
@@ -971,8 +1002,10 @@
 
 @media (max-width: 500px) {
   .contacts__bgText {
-    font-size: 3rem;
     margin-top: 5%;
+    span{
+      font-size: 3rem;
+    }
   }
 }
 

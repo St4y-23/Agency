@@ -74,17 +74,17 @@
   transition: linear 0.2s;
 }
 
-
-
 .qualities__info{
   width: 48%;
   position: relative;
 }
 
 .qualities__bgText{
-  font-size: 5rem;
   left: 0;
   transform: translate(0);
+  span{
+    font-size: 5rem;
+  }
 }
 
 .qualities__box{

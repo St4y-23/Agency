@@ -149,7 +149,7 @@ body {
 .text {
   font-style: italic;
   font-family: "Cormorant", serif;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
 }
 
@@ -164,18 +164,23 @@ body {
 
 .bgText {
   position: absolute;
-  top: 17%;
+  top: 15%;
   left: 5%;
   z-index: -2;
-  line-height: 0.5;
+  color: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.bgText span {
+  display: inline-block;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: -0.02em;
   font-size: 12rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.05);
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
-  -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
 
 .bgText--pages {
@@ -188,6 +193,9 @@ body {
   top: -5%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.bgText--about span {
   font-size: 7rem;
 }
 
@@ -747,13 +755,16 @@ body {
   font-size: 1.5rem;
 }
 
-.nav-but-wrap {
+.menu {
   position: fixed;
-  display: inline-block;
-  transition: all 0.3s ease-out;
   z-index: 11;
   top: 40px;
   right: 60px;
+}
+
+.nav-but-wrap {
+  display: inline-block;
+  transition: all 0.3s ease-out;
 }
 
 .menu-icon {
@@ -1155,8 +1166,10 @@ body.nav-active .nav__list-item:nth-child(10) {
   position: relative;
 }
 
-.intro__btn {
+.intro__btn-box {
+  position: relative;
   margin-top: 50px;
+  z-index: 2;
 }
 
 .intro__arrow {
@@ -1781,9 +1794,12 @@ svg.pulse-svg .third-circle {
 }
 
 .aboutInfo__bgText {
-  font-size: 5rem;
   left: 0;
   transform: translate(0);
+}
+
+.aboutInfo__bgText span {
+  font-size: 5rem;
 }
 
 .aboutInfo__box-title,
@@ -2084,9 +2100,12 @@ svg.pulse-svg .third-circle {
 }
 
 .qualities__bgText {
-  font-size: 5rem;
   left: 0;
   transform: translate(0);
+}
+
+.qualities__bgText span {
+  font-size: 5rem;
 }
 
 .qualities__box {
@@ -2842,7 +2861,7 @@ svg.pulse-svg .third-circle {
     font-weight: 500;
     font-size: 0.9rem;
   }
-  .intro__btn {
+  .intro__btn-box {
     margin-top: 25px;
   }
   .suptitle {
@@ -2942,7 +2961,7 @@ svg.pulse-svg .third-circle {
     top: 20px;
     left: 30px;
   }
-  .nav-but-wrap {
+  .menu {
     top: 30px;
     right: 30px;
   }
@@ -2956,7 +2975,7 @@ svg.pulse-svg .third-circle {
     top: 10px;
     left: 20px;
   }
-  .nav-but-wrap {
+  .menu {
     top: 20px;
     right: 20px;
   }
@@ -2976,7 +2995,7 @@ svg.pulse-svg .third-circle {
   #logo {
     height: 150px;
   }
-  .intro__btn {
+  .intro__btn-box {
     margin-top: 30px;
   }
 }
@@ -2988,7 +3007,7 @@ svg.pulse-svg .third-circle {
   .intro__stick {
     height: 5px;
   }
-  .intro__btn {
+  .intro__btn-box {
     margin-top: 15px;
   }
 }
@@ -3011,9 +3030,11 @@ svg.pulse-svg .third-circle {
 
 @media (max-width: 1200px) {
   .aboutUs__bgText {
-    font-size: 8rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .aboutUs__bgText span {
+    font-size: 8rem;
   }
   .aboutUs__wrapper {
     justify-content: center;
@@ -3084,7 +3105,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 800px) {
-  .aboutUs__bgText {
+  .aboutUs__bgText span {
     font-size: 6rem;
   }
   .aboutUs__title {
@@ -3096,7 +3117,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 650px) {
-  .aboutUs__bgText {
+  .aboutUs__bgText span {
     font-size: 3.7rem;
   }
 }
@@ -3290,9 +3311,11 @@ svg.pulse-svg .third-circle {
 
 @media (max-width: 1024px) {
   .portfolio__bgText {
-    font-size: 8rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .portfolio__bgText span {
+    font-size: 8rem;
   }
   .portfolio__item-box::before {
     height: 2px;
@@ -3315,7 +3338,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 769px) {
-  .portfolio__bgText {
+  .portfolio__bgText span {
     font-size: 5rem;
   }
   .portfolio__item {
@@ -3339,9 +3362,11 @@ svg.pulse-svg .third-circle {
 
 @media (max-width: 1200px) {
   .ourContacts__bgText {
-    font-size: 8rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .ourContacts__bgText span {
+    font-size: 8rem;
   }
   .ourContacts__title {
     font-size: 3rem;
@@ -3386,7 +3411,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 760px) {
-  .ourContacts__bgText {
+  .ourContacts__bgText span {
     font-size: 5rem;
   }
   .ourContacts__title {
@@ -3411,7 +3436,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 500px) {
-  .ourContacts__bgText {
+  .ourContacts__bgText span {
     font-size: 3rem;
   }
 }
@@ -3453,7 +3478,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 1024px) {
-  .services__bgText {
+  .services__bgText span {
     font-size: 8rem;
   }
   .services__col {
@@ -3467,7 +3492,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 650px) {
-  .services__bgText {
+  .services__bgText span {
     font-size: 4rem;
   }
   .services__inner {
@@ -3519,7 +3544,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 768px) {
-  .works__bgText {
+  .works__bgText span {
     font-size: 9rem;
   }
   .works__inner {
@@ -3534,7 +3559,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 600px) {
-  .works__bgText {
+  .works__bgText span {
     font-size: 5rem;
   }
   .works__inner {
@@ -3550,7 +3575,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 1200px) {
-  .contacts__bgText {
+  .contacts__bgText span {
     font-size: 9rem;
   }
   .contacts__box .text {
@@ -3568,7 +3593,7 @@ svg.pulse-svg .third-circle {
 }
 
 @media (max-width: 760px) {
-  .contacts__bgText {
+  .contacts__bgText span {
     font-size: 5rem;
   }
   .contacts__box {
@@ -3599,7 +3624,9 @@ svg.pulse-svg .third-circle {
 
 @media (max-width: 500px) {
   .contacts__bgText {
-    font-size: 3rem;
     margin-top: 5%;
+  }
+  .contacts__bgText span {
+    font-size: 3rem;
   }
 }

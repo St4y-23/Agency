@@ -17,13 +17,15 @@
 
 
 // Menu
-.nav-but-wrap{ 
+.menu{
 	position: fixed;
-	display: inline-block;
-  transition : all 0.3s ease-out;
-  z-index: 11;
+	z-index: 11;
   top: 40px;
   right: 60px;
+}
+.nav-but-wrap{ 
+	display: inline-block;
+  transition : all 0.3s ease-out;
 }
 .menu-icon {
 	height: 30px;

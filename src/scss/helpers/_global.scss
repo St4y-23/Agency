@@ -167,19 +167,23 @@ body {
 
 .bgText {
   position: absolute;
-  top: 17%;
+  top: 15%;
   left: 5%;
   z-index: -2;
-  line-height: 0.5;
-  white-space: nowrap;
-  letter-spacing: -0.02em;
-  font-size: 12rem;
-  font-weight: 700;
   color: rgba(255, 255, 255, 0.05);
-  text-transform: uppercase;
+  overflow: hidden;
 
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
-  -webkit-text-fill-color: transparent;
+  span{
+    display: inline-block;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: -0.02em;
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 1;
+  }
 
   &--pages {
     left: 50%;
@@ -190,7 +194,9 @@ body {
     top: -5%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 7rem;
+    span{
+      font-size: 7rem;
+    }
   }
 }
 

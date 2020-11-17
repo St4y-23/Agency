@@ -35,9 +35,11 @@
 }
 
 .aboutInfo__bgText{
-  font-size: 5rem;
   left: 0;
   transform: translate(0);
+  span{
+    font-size: 5rem;
+  }
 }
 
 .aboutInfo__box-title,
