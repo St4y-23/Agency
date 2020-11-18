@@ -97,7 +97,7 @@ $(function () {
 			// about us
 			if (destination == 2) {
 				var tl2 = gsap.timeline({ defaults: { duration: 1 } });
-						tl2.from(".bgText span", { delay: .5, y: '110%' })
+						tl2.from(".bgText span", { delay: .5, y: '110%'})
 							 .from(".aboutUs__suptitle", { opacity: 0, y: '100%' }, "-=.7")
 							 .from(".aboutUs__title", { y: '20%', opacity: 0 }, "-=.7")
 							 .from(".aboutUs__text", { stagger: 0.2, y: '20%', opacity: 0 }, "-=.7")
@@ -105,7 +105,28 @@ $(function () {
 							 .from(".aboutUs__image", { x: '100%' }, "-=1.7")
 							 .from(".aboutUs__image-dark", { width: '100%' }, "-=.7")
 							 .from(".aboutUs__item", { stagger: 0.2, y: '20%', opacity: 0 }, "-=1.5")
-			}
+			};
+			// our services
+			if (destination == 3) {
+				var tl3 = gsap.timeline({ defaults: { duration: 1 } });
+						tl3.from(".ourServices__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
+							 .from(".ourServices__num", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.4")
+							 .from(".ourServices__name", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.2")
+							 .from(".ourServices__popup-pagination", { width: 0 }, "-=2.2")
+							 .from(".ourServices-button-prev", { y: '20%', opacity: 0 }, "-=2.2")
+							 .from(".ourServices-button-next", { y: '20%', opacity: 0 }, "-=2.2")		 
+			};
+			// potfolio
+			if (destination == 4) {
+				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
+						tl4.from(".portfolio__bgText span", { delay: .5, y: '110%' })
+							 .from(".portfolio__item", { height: 0}, "-=.2")
+							 .from(".portfolio__item-hide", { height: '100%', stagger: 0.2 })
+							 .from(".portfolio__btn-box", { y: '5%', opacity: 0 }, "-=1.2")
+							 .from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
+							 .from(".portfolio-button-next", { opacity: 0 }, "-=1")
+							 
+			};
 
 		}
 	});
