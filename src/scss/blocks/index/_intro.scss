@@ -38,38 +38,42 @@
 }
 
 .intro__title.active #logo {
-  animation: fill .5s ease forwards 4s;
+  animation: fill .5s ease forwards 3.5s;
 
   path:nth-child(2) {
     stroke-dashoffset: 795;
     stroke-dasharray: 795;
-    animation: line-anim 3s ease forwards 0.8s;
+    animation: line-anim 2.5s ease forwards 0.8s;
   }
   path:nth-child(3) {
     stroke-dashoffset: 898;
     stroke-dasharray: 898;
-    animation: line-anim 2s ease forwards 1.1s;
+    animation: line-anim 1.5s ease forwards 1.1s;
   }
   path:nth-child(4) {
     stroke-dashoffset: 833;
     stroke-dasharray: 833;
-    animation: line-anim 2s ease forwards 1.4s;
+    animation: line-anim 1.5s ease forwards 1.4s;
   }
   path:nth-child(5) {
     stroke-dashoffset: 985;
     stroke-dasharray: 985;
-    animation: line-anim 2s ease forwards 1.7s;
+    animation: line-anim 1.5s ease forwards 1.7s;
   }
   path:nth-child(6) {
     stroke-dashoffset: 820;
     stroke-dasharray: 820;
-    animation: line-anim 2s ease forwards 2s;
+    animation: line-anim 1.5s ease forwards 2s;
   }
   path:nth-child(7) {
     stroke-dashoffset: 627;
     stroke-dasharray: 627;
-    animation: line-anim 2s ease forwards 2.3s;
+    animation: line-anim 1.5s ease forwards 2.3s;
   }
+}
+
+.fg{
+  transition: e;
 }
 
 @keyframes line-anim{

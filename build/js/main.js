@@ -4,7 +4,7 @@ $(window).on('load', function () {
 
 	// Intro
 	var tl0 = gsap.timeline({ defaults: { duration: 1 } });
-			tl0.to(".intro__stick", { delay: 3.5, width: '60%' })
+			tl0.to(".intro__stick", { delay: 3, width: '60%' })
 			tl0.from(".intro__subtitle", { x: '-5%', opacity: 0 }, "-=.8")
 			tl0.from(".intro__btn-box", { x: '-5%', opacity: 0 }, "-=.7")
 			tl0.from(".intro__arrow", { y: '-50%', opacity: 0 }, "-=.7")
@@ -36,6 +36,12 @@ $(window).on('load', function () {
 
 
 $(function () {
+
+	// $(".intro__btn-box").click(function(e) {
+	// 	e.preventDefault();
+	// 	$(".intro").removeClass('active fp-completely');
+	// 	$('.aboutUs').addClass('active fp-completely');
+	// });
 
 	// Animsition
 	$(".animsition-overlay").animsition({
@@ -91,6 +97,7 @@ $(function () {
 		navigation: true,
 		navigationTooltips: ['Home', 'About', 'Services', 'Works', 'Contacts'],
 		showActiveTooltip: true,
+		anchors: ['section1', 'section2'],
 
 		onLeave: function (origin, destination, direction) {
 
@@ -116,11 +123,11 @@ $(function () {
 							 .from(".ourServices-button-prev", { y: '20%', opacity: 0 }, "-=2.2")
 							 .from(".ourServices-button-next", { y: '20%', opacity: 0 }, "-=2.2")		 
 			};
-			// potfolio
+			// portfolio
 			if (destination == 4) {
 				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
-						tl4.from(".portfolio__bgText span", { delay: .5, y: '110%' })
-							 .from(".portfolio__item-hide", { height: '100%', stagger: 0.2 }, "-=.8")
+						tl4.from(".portfolio__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
+							 .from(".portfolio__bgText span", {  y: '110%' }, "-=1.8")
 							 .from(".portfolio__btn-box", { y: '15%', opacity: 0 }, "-=1.8")
 							 .from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
 							 .from(".portfolio-button-next", { opacity: 0 }, "-=1")		 
@@ -339,7 +346,13 @@ $(function () {
 		maxGlare: 0.1,
 		easing: "cubic-bezier(.03,.98,.52,.99)",
 		speed: 600
-	})
+	});
+
+
+	$('.about__btn').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 200 }, 500, 'linear');
+	});
 
 
 
