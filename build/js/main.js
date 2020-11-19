@@ -120,12 +120,23 @@ $(function () {
 			if (destination == 4) {
 				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
 						tl4.from(".portfolio__bgText span", { delay: .5, y: '110%' })
-							 .from(".portfolio__item", { height: 0}, "-=.2")
-							 .from(".portfolio__item-hide", { height: '100%', stagger: 0.2 })
-							 .from(".portfolio__btn-box", { y: '5%', opacity: 0 }, "-=1.2")
+							 .from(".portfolio__item-hide", { height: '100%', stagger: 0.2 }, "-=.8")
+							 .from(".portfolio__btn-box", { y: '15%', opacity: 0 }, "-=1.8")
 							 .from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
-							 .from(".portfolio-button-next", { opacity: 0 }, "-=1")
-							 
+							 .from(".portfolio-button-next", { opacity: 0 }, "-=1")		 
+			};
+			// contacts
+			if (destination == 5) {
+				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
+						tl4.from(".ourContacts__bgText span", { delay: .5, y: '110%' })
+							 .from(".ourContacts__title", { y: '50%', opacity: 0 }, "-=.7")
+							 .from(".ourContacts__text", { y: '30%', opacity: 0 }, "-=.7")
+							 .from(".ourContacts__logo", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.7")
+							 .from(".ourContacts__adress", { y: '15%', opacity: 0 }, "-=1")
+							 .from(".ourContacts__tel a", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.8")
+							 .from(".ourContacts__email", { y: '15%', opacity: 0 }, "-=1")
+							 .from(".ourContacts__map", { x:'100%' }, "-=2.2")
+							 .from(".ourContacts__map-hide", { width: '100%' }, "-=1.2")
 			};
 
 		}

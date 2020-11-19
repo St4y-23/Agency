@@ -602,7 +602,8 @@
       transform: scale(1.15);
 
       .portfolio__item-popup {
-        box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 30px 5px rgba($red, .3);
+        box-shadow: none;
       }
 
       .portfolio__item-img {
@@ -706,8 +707,17 @@
 }
 
 // Our Contacts  /////////////////////////
+@media (max-width: 1440px) {
+  .ourContacts__bgText {
+    span{
+      font-size: 6rem;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .ourContacts__bgText {
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     span{
@@ -767,6 +777,7 @@
 
 @media (max-width: 760px) {
   .ourContacts__bgText {
+    top: 15%;
     span{
       font-size: 5rem;
     }

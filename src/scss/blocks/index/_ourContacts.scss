@@ -4,6 +4,13 @@
   position: relative;
 }
 
+.ourContacts__bgText{
+  top: 20%;
+  span{
+    font-size: 8rem;
+  }
+}
+
 .ourContacts__inner {
   display: flex;
   width: 100%;
@@ -58,6 +65,17 @@
 .ourContacts__map {
   width: 50%;
   height: 100%;
+  position: relative;
+}
+
+.ourContacts__map-hide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  z-index: 5;
 }
 
 .ourContacts__map-frame {
