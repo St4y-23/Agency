@@ -65,9 +65,19 @@ body {
   z-index: 100;
 }
 
+.qualities,
+.features,
+.testimonials,
+.partners,
+.team,
+.contacts{
+  display: none;
+}
+
 .content {
   overflow-x: hidden;
   width: 100vw;
+  padding-bottom: 20%;
 }
 
 .container {
@@ -139,7 +149,7 @@ body {
 
 .title {
   font-size: 2.5rem;
-  line-height: 1;
+  line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -191,7 +201,7 @@ body {
     position: fixed;
   }
   &--about{
-    top: -5%;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
     span{
@@ -238,6 +248,10 @@ body {
     max-width: 700px;
     margin: 0 auto;
   }
+}
+
+.sectionPage{
+  margin-bottom: 10rem;
 }
 
 // Button

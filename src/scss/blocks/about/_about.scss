@@ -4,7 +4,6 @@
   height: 70vh;
   display: flex;
   align-items: center;
-  margin-bottom: 10%;
 }
 
 .about__bgImage{
@@ -24,11 +23,11 @@
 }
 
 .about__box{
-  padding-left: 7%;
+  padding: 0 7%;
   max-width: 800px;
 }
 
-.about__title{
+.about__box-title{
   line-height: 1.2;
 }
 

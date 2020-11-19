@@ -1,11 +1,10 @@
 .aboutServices{
   position: relative;
-  margin-bottom: 10%;
 }
 
 .aboutServices__box{
-  max-width: 700px;
   margin: 0 auto;
+  padding: 0 7%;
   text-align: center;
 }
 
@@ -64,7 +63,7 @@
 }
 
 .aboutServices__logo{
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   background-color: #eee;
   border-radius: 50%;
