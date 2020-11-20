@@ -1,12 +1,12 @@
 .partners{
   position: relative;
-  margin-bottom: 10%;
 }
 
 .partners__items{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
 }
 

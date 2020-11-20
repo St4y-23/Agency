@@ -6,17 +6,24 @@
   flex-direction: column;
   justify-content: center;
   padding: 1% 0;
-  overflow: hidden;
+}
 
-  .bgText{
-    top: 10%;
-  }
+.contacts.sectionPage{
+  justify-content: flex-start;
+  padding: 0;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.contacts__bgText{
+  top: -3rem;
 }
 
 .contacts__box{
   margin: 0 auto;
   margin-bottom: 3%;
   text-align: center;
+  position: relative;
 
   & .text{
     max-width: 700px;
@@ -51,6 +58,7 @@
   align-items: center;
   text-align: center;
   font-size: .7rem;
+  padding: 0 1rem;
 }
 
 .contacts__item-icon{

@@ -223,7 +223,7 @@ $(function () {
 	var mySwiper4 = new Swiper('.team__slider', {
 		loop: true,
 		slidesPerView: 'auto',
-		spaceBetween: 200,
+		centeredSlides: true,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'progressbar',
@@ -232,6 +232,24 @@ $(function () {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
+		breakpoints: {
+
+			1: {
+				spaceBetween: 25,
+			},
+			425: {
+				spaceBetween: 45,
+			},
+			600: {
+				spaceBetween: 70,
+			},
+			1300: {
+				spaceBetween: 100,
+			},
+			1440: {
+				spaceBetween: 150
+			}
+		}
 	});
 
 
@@ -351,7 +369,7 @@ $(function () {
 
 	$('.about__btn').on('click', function (e) {
 		e.preventDefault();
-		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 200 }, 500, 'linear');
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100 }, 500, 'linear');
 	});
 
 

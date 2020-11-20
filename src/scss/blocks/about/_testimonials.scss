@@ -1,6 +1,6 @@
 .testimonials{
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 4rem;
   padding: 5% 0;
 }
 
@@ -13,6 +13,10 @@
   z-index: 1;
 }
 
+.testimonials__rect{
+  background-color: rgba(#000, 0.5);
+}
+
 .testimonials__inner{
   max-width: 70%;
   margin: 0 auto;
@@ -21,7 +25,7 @@
 }
 
 .testimonials__box{
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -35,24 +39,24 @@
 }
 
 .testimonials__item-title{
-  font-size: 2rem;
   max-width: 500px;
-  line-height: 1.2;
 }
 
 .testimonials__item-icon{
-  margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 
 .testimonials__item-text{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   max-width: 500px;
   color: #fff;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-style: italic;
+  padding: 0 0.5rem;
 }
 
 .testimonials__item-name{
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
 
