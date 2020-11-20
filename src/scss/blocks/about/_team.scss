@@ -64,6 +64,17 @@
   }
 }
 
+.team__slider.blackHide--off{
+  .team__slide-image{
+    .blackHide{
+      width: 0;
+    }
+  }
+  .team__slide-box{
+    opacity: 1;
+  }
+}
+
 .team__slide-box{
   position: absolute;
   top: 70%;
@@ -73,6 +84,9 @@
   font-size: 2rem;
   letter-spacing: 3px;
   z-index: 3;
+  opacity: 0;
+  transition: linear .2s;
+  transition-delay: .3s;
 }
 
 .team__slide-firstName{

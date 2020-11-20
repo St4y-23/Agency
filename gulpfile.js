@@ -52,6 +52,7 @@ gulp.task('script', function () {
 		'node_modules/tilt.js/dest/tilt.jquery.js',
 		'node_modules/vegas/dist/vegas.js',
 		'node_modules/animsition/dist/js/animsition.js',
+		'node_modules/scrollreveal/dist/scrollreveal.js',
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

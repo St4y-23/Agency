@@ -4,18 +4,24 @@ $(window).on('load', function () {
 
 	// Intro
 	var tl0 = gsap.timeline({ defaults: { duration: 1 } });
-			tl0.to(".intro__stick", { delay: 3, width: '60%' })
-			tl0.from(".intro__subtitle", { x: '-5%', opacity: 0 }, "-=.8")
-			tl0.from(".intro__btn-box", { x: '-5%', opacity: 0 }, "-=.7")
-			tl0.from(".intro__arrow", { y: '-50%', opacity: 0 }, "-=.7")
-			tl0.from("#fp-nav li", { stagger: 0.1, x: '50%', opacity: 0 }, "-=1")
+	tl0.to(".intro__stick", { delay: 3, width: '60%' })
+	tl0.from(".intro__subtitle", { x: '-5%', opacity: 0 }, "-=.8")
+	tl0.from(".intro__btn-box", { x: '-5%', opacity: 0 }, "-=.7")
+	tl0.from(".intro__arrow", { y: '-50%', opacity: 0 }, "-=.7")
+	tl0.from("#fp-nav li", { stagger: 0.1, x: '50%', opacity: 0 }, "-=1")
 
 	// Header & Footer
 	var tl1 = gsap.timeline({ defaults: { duration: 1 } });
-			tl1.from(".header__logo", { delay: 1, y: '50%', opacity: 0 })
-			tl1.from(".menu", { y: '50%', opacity: 0 }, "-=1")
-			tl1.from(".footer__copy", { y: '50%', opacity: 0 }, "-=.8")
-			tl1.from(".social__link", { y: '20%', opacity: 0, stagger: 0.2 }, "-=.8")
+	tl1.from(".header__logo", { delay: 1, y: '50%', opacity: 0 })
+	tl1.from(".menu", { y: '50%', opacity: 0 }, "-=1")
+	tl1.from(".footer__copy", { y: '50%', opacity: 0 }, "-=.8")
+	tl1.from(".social__link", { y: '20%', opacity: 0, stagger: 0.2 }, "-=.8")
+
+	// About
+	var tl5 = gsap.timeline({ defaults: { duration: 1 } });
+	tl5.from(".about__box-title", { delay: .8, y: '10%', opacity: 0 })
+		 .from(".about__text", { y: '10%', opacity: 0 }, "-=.9")
+		 .from(".about__btn-box", { y: '10%', opacity: 0 }, "-=.9")
 
 
 
@@ -24,7 +30,7 @@ $(window).on('load', function () {
 
 		// var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
 
-		
+
 
 	} else {
 
@@ -51,7 +57,7 @@ $(function () {
 		outDuration: 800,
 		linkElement: '.animsition-link',
 		loading: true,
-		loadingParentElement: 'body', 
+		loadingParentElement: 'body',
 		loadingClass: 'animsition-loading',
 		loadingInner: '', // e.g '<img src="loading.svg" />'
 		timeout: false,
@@ -104,46 +110,46 @@ $(function () {
 			// about us
 			if (destination == 2) {
 				var tl2 = gsap.timeline({ defaults: { duration: 1 } });
-						tl2.from(".bgText span", { delay: .5, y: '110%'})
-							 .from(".aboutUs__suptitle", { opacity: 0, y: '100%' }, "-=.7")
-							 .from(".aboutUs__title", { y: '20%', opacity: 0 }, "-=.7")
-							 .from(".aboutUs__text", { stagger: 0.2, y: '20%', opacity: 0 }, "-=.7")
-							 .from(".aboutUs__btn-box", { y: '40%', opacity: 0 }, "-=.8")
-							 .from(".aboutUs__image", { x: '100%' }, "-=1.7")
-							 .from(".aboutUs__image-dark", { width: '100%' }, "-=.7")
-							 .from(".aboutUs__item", { stagger: 0.2, y: '20%', opacity: 0 }, "-=1.5")
+				tl2.from(".bgText span", { delay: .5, y: '110%' })
+					.from(".aboutUs__suptitle", { opacity: 0, y: '100%' }, "-=.7")
+					.from(".aboutUs__title", { y: '20%', opacity: 0 }, "-=.7")
+					.from(".aboutUs__text", { stagger: 0.2, y: '20%', opacity: 0 }, "-=.7")
+					.from(".aboutUs__btn-box", { y: '40%', opacity: 0 }, "-=.8")
+					.from(".aboutUs__image", { x: '100%' }, "-=1.7")
+					.from(".aboutUs__image-dark", { width: '100%' }, "-=.7")
+					.from(".aboutUs__item", { stagger: 0.2, y: '20%', opacity: 0 }, "-=1.5")
 			};
 			// our services
 			if (destination == 3) {
 				var tl3 = gsap.timeline({ defaults: { duration: 1 } });
-						tl3.from(".ourServices__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
-							 .from(".ourServices__num", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.4")
-							 .from(".ourServices__name", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.2")
-							 .from(".ourServices__popup-pagination", { width: 0 }, "-=2.2")
-							 .from(".ourServices-button-prev", { y: '20%', opacity: 0 }, "-=2.2")
-							 .from(".ourServices-button-next", { y: '20%', opacity: 0 }, "-=2.2")		 
+				tl3.from(".ourServices__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
+					.from(".ourServices__num", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.4")
+					.from(".ourServices__name", { y: '20%', opacity: 0, stagger: 0.2 }, "-=2.2")
+					.from(".ourServices__popup-pagination", { width: 0 }, "-=2.2")
+					.from(".ourServices-button-prev", { y: '20%', opacity: 0 }, "-=2.2")
+					.from(".ourServices-button-next", { y: '20%', opacity: 0 }, "-=2.2")
 			};
 			// portfolio
 			if (destination == 4) {
 				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
-						tl4.from(".portfolio__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
-							 .from(".portfolio__bgText span", {  y: '110%' }, "-=1.8")
-							 .from(".portfolio__btn-box", { y: '15%', opacity: 0 }, "-=1.8")
-							 .from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
-							 .from(".portfolio-button-next", { opacity: 0 }, "-=1")		 
+				tl4.from(".portfolio__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
+					.from(".portfolio__bgText span", { y: '110%' }, "-=1.8")
+					.from(".portfolio__btn-box", { y: '15%', opacity: 0 }, "-=1.8")
+					.from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
+					.from(".portfolio-button-next", { opacity: 0 }, "-=1")
 			};
 			// contacts
 			if (destination == 5) {
 				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
-						tl4.from(".ourContacts__bgText span", { delay: .5, y: '110%' })
-							 .from(".ourContacts__title", { y: '50%', opacity: 0 }, "-=.7")
-							 .from(".ourContacts__text", { y: '30%', opacity: 0 }, "-=.7")
-							 .from(".ourContacts__logo", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.7")
-							 .from(".ourContacts__adress", { y: '15%', opacity: 0 }, "-=1")
-							 .from(".ourContacts__tel a", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.8")
-							 .from(".ourContacts__email", { y: '15%', opacity: 0 }, "-=1")
-							 .from(".ourContacts__map", { x:'100%' }, "-=2.2")
-							 .from(".ourContacts__map-hide", { width: '100%' }, "-=1.2")
+				tl4.from(".ourContacts__bgText span", { delay: .5, y: '110%' })
+					.from(".ourContacts__title", { y: '50%', opacity: 0 }, "-=.7")
+					.from(".ourContacts__text", { y: '30%', opacity: 0 }, "-=.7")
+					.from(".ourContacts__logo", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.7")
+					.from(".ourContacts__adress", { y: '15%', opacity: 0 }, "-=1")
+					.from(".ourContacts__tel a", { y: '15%', opacity: 0, stagger: 0.2 }, "-=.8")
+					.from(".ourContacts__email", { y: '15%', opacity: 0 }, "-=1")
+					.from(".ourContacts__map", { x: '100%' }, "-=2.2")
+					.from(".ourContacts__map-hide", { width: '100%' }, "-=1.2")
 			};
 
 		}
@@ -373,6 +379,88 @@ $(function () {
 	});
 
 
+	// ScrollReveal
+
+	// function aboutImage(el) {
+	// 	el.classList.remove('is-animating');
+	// 	el.classList.add('is-visible');
+	// }
+
+	function aboutImage(el) {
+		el.classList.add('blackHide--off');
+	}
+
+	var slideUp = {
+		delay: 100,
+		useDelay: 'once',
+		duration: 500,
+		reset: false,
+		interval: 100,
+		distance: '20px',
+		viewOffset: {
+			bottom: 50
+		}
+	}
+
+	// aboutInfoBox
+	var aboutBox = [
+		document.querySelector('.aboutInfo__box-suptitle'),
+		document.querySelector('.aboutInfo__title'),
+		document.querySelector('.aboutInfo__box-text'),
+		document.querySelector('.aboutServices__suptitle'),
+		document.querySelector('.aboutServices__title'),
+		document.querySelector('.howWeWork__suptitle'),
+		document.querySelector('.howWeWork__title'),
+		document.querySelector('.howWeWork__text'),
+		document.querySelector('.qualities__suptitle'),
+		document.querySelector('.qualities__title'),
+		document.querySelector('.qualities__text'),
+		document.querySelector('.features__suptitle'),
+		document.querySelector('.features__title'),
+		document.querySelector('.testimonials__item-suptitle'),
+		document.querySelector('.testimonials__item-title'),
+		document.querySelector('.testimonials__item-text'),
+		document.querySelector('.testimonials__item-icon'),
+		document.querySelector('.testimonials__item-text'),
+		document.querySelector('.testimonials__item-name'),
+		document.querySelector('.testimonials__item-company'),
+		document.querySelector('.team__suptitle'),
+		document.querySelector('.team__title'),
+		document.querySelector('.contacts__title'),
+		document.querySelector('.contacts__text'),
+	];
+
+	var aboutInfoContacts = document.querySelectorAll('.aboutInfo__contacts-box');
+	var aboutServicesItem = document.querySelectorAll('.aboutServices__item');
+	var howWeWorkItem = document.querySelectorAll('.howWeWork__item');
+	var qualitiesItem = document.querySelectorAll('.qualities__item');
+	var qualitiesFeature = document.querySelectorAll('.qualities__feature');
+	var featuresItem = document.querySelectorAll('.features__item');
+	var partnersItem = document.querySelectorAll('.partners__item');
+	var contactsItem = document.querySelectorAll('.contacts__item');
+
+
+	ScrollReveal().reveal(aboutBox, slideUp);
+	ScrollReveal().reveal(aboutInfoContacts, slideUp);
+
+	ScrollReveal().reveal('.aboutInfo__image', { afterReveal: aboutImage });
+
+	ScrollReveal().reveal(aboutServicesItem, slideUp);
+
+	ScrollReveal().reveal(howWeWorkItem, slideUp);
+
+	ScrollReveal().reveal(qualitiesItem, slideUp);
+	ScrollReveal().reveal(qualitiesFeature, slideUp);
+
+	ScrollReveal().reveal(featuresItem, slideUp);
+
+	ScrollReveal().reveal(partnersItem, slideUp);
+
+	ScrollReveal().reveal('.team__slider', { afterReveal: aboutImage });
+
+	ScrollReveal().reveal(contactsItem, slideUp);
+	
+	ScrollReveal().reveal('.contacts__map', { afterReveal: aboutImage });
 
 
 });

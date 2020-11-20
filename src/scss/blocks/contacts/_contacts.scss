@@ -42,6 +42,13 @@
 .contacts__map{
   width: 100%;
   height: 45vh;
+  position: relative;
+}
+
+.contacts__map.blackHide--off{
+  .blackHide{
+    width: 0;
+  }
 }
 
 .contacts__items{

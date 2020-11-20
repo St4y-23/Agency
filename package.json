@@ -25,6 +25,7 @@
     "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
+    "scrollreveal": "^4.0.7",
     "tilt.js": "^1.2.1",
     "tingle.js": "^0.15.3",
     "vegas": "^2.5.1"
