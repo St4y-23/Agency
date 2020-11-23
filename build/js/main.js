@@ -20,8 +20,8 @@ $(window).on('load', function () {
 	// About
 	var tl5 = gsap.timeline({ defaults: { duration: 1 } });
 	tl5.from(".about__box-title", { delay: .8, y: '10%', opacity: 0 })
-		 .from(".about__text", { y: '10%', opacity: 0 }, "-=.9")
-		 .from(".about__btn-box", { y: '10%', opacity: 0 }, "-=.9")
+		.from(".about__text", { y: '10%', opacity: 0 }, "-=.9")
+		.from(".about__btn-box", { y: '10%', opacity: 0 }, "-=.9")
 
 
 
@@ -42,12 +42,6 @@ $(window).on('load', function () {
 
 
 $(function () {
-
-	// $(".intro__btn-box").click(function(e) {
-	// 	e.preventDefault();
-	// 	$(".intro").removeClass('active fp-completely');
-	// 	$('.aboutUs').addClass('active fp-completely');
-	// });
 
 	// Animsition
 	$(".animsition-overlay").animsition({
@@ -397,10 +391,13 @@ $(function () {
 		reset: false,
 		interval: 100,
 		distance: '20px',
+		easing: 'cubic-bezier(.15,0,.32,1.01)',
 		viewOffset: {
 			bottom: 50
 		}
 	}
+
+	// cubic-bezier(0,.01,1,1)
 
 	// aboutInfoBox
 	var aboutBox = [
@@ -438,6 +435,8 @@ $(function () {
 	var featuresItem = document.querySelectorAll('.features__item');
 	var partnersItem = document.querySelectorAll('.partners__item');
 	var contactsItem = document.querySelectorAll('.contacts__item');
+	var servicesItem = document.querySelectorAll('.services__col');
+	var worksItem = document.querySelectorAll('.works__item-popup');
 
 
 	ScrollReveal().reveal(aboutBox, slideUp);
@@ -461,6 +460,118 @@ $(function () {
 	ScrollReveal().reveal(contactsItem, slideUp);
 	
 	ScrollReveal().reveal('.contacts__map', { afterReveal: aboutImage });
+	
+	ScrollReveal().reveal(servicesItem, slideUp);
+
+	ScrollReveal().reveal(worksItem, slideUp);
+
+
+
+	// const cursor = document.querySelector('.cursor');
+
+	// document.addEventListener('mousemove', e => {
+	// 	cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+	// })
+
+
+	// let mouseCursor = document.querySelector(".cursor");
+	// let navLinks = document.querySelectorAll('a');
+
+	// window.addEventListener('mousemove', cursor);
+
+	// function cursor(e){
+	// 	mouseCursor.style.top = e.pageY + 'px';
+	// 	mouseCursor.style.left = e.pageX + 'px';
+	// }
+
+	// navLinks.forEach(link => {
+
+	// 	link.addEventListener('mouseover', () => {
+	// 		mouseCursor.classList.add("link-grow");
+	// 		link.classList.add('hovered-link');
+	// 	});
+
+	// 	link.addEventListener('mouseleave', () => {
+	// 		mouseCursor.classList.remove("link-grow");
+	// 		link.classList.remove('hovered-link');
+	// 	});
+
+	// });
+
+
+   
+
+
+
+	var $window = jQuery(window);
+
+	// Cursor
+	cursor = {
+		$el: jQuery('.cursor'),
+		$el_main: jQuery('span.cursor-circle'),
+		targetX: $window.width() / 2,
+		targetY: $window.height() / 2,
+		currentX: $window.width() / 2,
+		currentY: $window.height() / 2,
+		easing: 0.2,
+		init: function () {
+			let $this_el = this.$el;
+			// Cursor Move
+			$window.on('mousemove', function (e) {
+				cursor.targetX = e.clientX - $this_el.width() / 2;
+				cursor.targetY = e.clientY - $this_el.height() / 2;
+			});
+			if ($this_el.length) {
+				cursor.animate();
+			}
+
+			// Show and Hide Cursor
+			$window.on('mouseleave', function () {
+				cursor.$el.addClass('is-inactive');
+			}).on('mouseenter', function () {
+				cursor.$el.removeClass('is-inactive');
+			});
+
+			// Bind Interractions
+			jQuery(document).on('mouseenter', 'a', function () {
+				if (jQuery(this).hasClass('lightbox-link')) {
+					cursor.$el.addClass('int-lightbox');
+				} else {
+					cursor.$el.addClass('int-link');
+				}
+				jQuery(this).on('mouseleave', function () {
+					cursor.$el.removeClass('int-link int-lightbox');
+				});
+			}).on('mouseenter', '.menu', function () {
+				cursor.$el.addClass('int-link');
+				jQuery(this).on('mouseleave', function () {
+					cursor.$el.removeClass('int-link');
+				});
+			}).on('mouseenter', 'button', function () {
+				cursor.$el.addClass('int-link');
+				jQuery(this).on('mouseleave', function () {
+					cursor.$el.removeClass('int-link');
+				});
+			}).on('mouseenter', '.slider', function () {
+				cursor.$el.addClass('int-grab-h');
+				jQuery(this).on('mouseleave', function () {
+					cursor.$el.removeClass('int-grab-h');
+				});
+			});
+		},
+		animate: function () {
+			let $this_el = cursor.$el;
+			cursor.currentX += ((cursor.targetX - cursor.currentX) * cursor.easing);
+			cursor.currentY += ((cursor.targetY - cursor.currentY) * cursor.easing);
+			$this_el.css('transform', 'translate3d(' + cursor.currentX + 'px, ' + cursor.currentY + 'px, 0)');
+			requestAnimationFrame(cursor.animate);
+		}
+	};
+	cursor.init();
+
+
+	
+
 
 
 });

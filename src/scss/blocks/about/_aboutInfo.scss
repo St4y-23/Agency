@@ -71,15 +71,14 @@
 
   &:hover{
     .aboutInfo__contacts-icon{
-      transform: rotate(360deg);
-
       &::before{
         transform: scale(1);
       }
     }
 
     .aboutInfo__icon{
-        fill: #eee;
+      fill: #eee;
+      transform: translate(-50%, -50%) rotate(360deg);
     }
 
     .aboutInfo__contacts-title{
