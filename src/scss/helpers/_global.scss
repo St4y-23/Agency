@@ -53,14 +53,13 @@ body {
   position: relative;
   // background: #111114;
   // background: #0d0d0f;
-  background: #16161a;
+  // background: #16161a;
+  background: $bg;
 }
 
 // Animsition preloader
 .animsition-overlay-slide {
-  // background: #111114;
-  // background: #0d0d0f;
-  background: #16161a;
+  background: $bg;
   z-index: 100;
 }
 
