@@ -52,11 +52,11 @@ body {
   color: #fff;
   overflow-x: hidden;
   position: relative;
-  background: #16161a;
+  background: #121212;
 }
 
 .animsition-overlay-slide {
-  background: #16161a;
+  background: #121212;
   z-index: 100;
 }
 
@@ -2086,6 +2086,8 @@ svg.pulse-svg .third-circle {
 .aboutInfo__contacts-icon::before {
   content: '';
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #b31c21;
@@ -2119,7 +2121,7 @@ svg.pulse-svg .third-circle {
 .aboutServices__item {
   display: flex;
   flex-direction: column;
-  background: #0a0a0a;
+  background-color: #151515;
   margin: 0 1rem;
   border-bottom: 2px solid #fff;
   position: relative;
