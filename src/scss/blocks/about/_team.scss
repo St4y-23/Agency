@@ -25,7 +25,7 @@
 
     .team__slide-image{
       .rect{
-        background-color: rgba(#000, .1);
+        background-color: rgba($black, .1);
       }
       img{
         transform: scale(1.05);
@@ -59,7 +59,7 @@
   }
 
   .rect{
-    background-color: rgba(#000, .2);
+    background-color: rgba($black, .2);
     transition: linear .3s;
   }
 }

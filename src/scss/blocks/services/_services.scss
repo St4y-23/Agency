@@ -44,7 +44,7 @@
   &:hover{
     box-shadow: 0 0 30px 5px rgba($red, .3);
     .services__rect{
-      background-color: rgba(#000, .2);
+      background-color: rgba($black, .2);
     }
     .services__item-title,
     .services__item-text{
@@ -55,7 +55,7 @@
 }
 
 .services__rect{
-  background-color: rgba(#000, 0);
+  background-color: rgba($black, 0);
   transition: ease-in-out .25s;
 }
 
@@ -97,7 +97,6 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: #38383f;  
   background: rgb(27, 27, 27);  
   position: relative;
   overflow: hidden;

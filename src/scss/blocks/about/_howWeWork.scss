@@ -25,7 +25,7 @@
     content: '';
     width: 75%;
     height: 1px;
-    background-color: #fff;
+    background-color: $light;
     top: 140px;
     left: 50%;
     transform: translateX(-50%);
@@ -45,7 +45,7 @@
   position: relative;
   width: 100px;
   height: 100px;
-  background-color: #fff;
+  background-color: $light;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@
 
 .howWeWork__item-num{
   position: absolute;
-  color: #000;
+  color: $black;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -81,7 +81,7 @@
     bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: $light;
     z-index: -2;
   }
 }

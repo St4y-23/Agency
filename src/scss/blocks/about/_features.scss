@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-right: 1px solid rgba(#fff, .4);
+  border-right: 1px solid rgba($light, .4);
 
   &:last-child{
     border-right: none;
@@ -38,6 +38,6 @@
 
 .features__item-text{
   font-size: 0.7rem;
-  color: rgba(#fff, .5);
-  color: #fff;
+  color: rgba($light, .5);
+  color: $light;
 }

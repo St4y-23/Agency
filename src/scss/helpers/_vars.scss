@@ -1,10 +1,13 @@
 // $text: #a9afc3;
 $red: #b31c21;
 $yellow: #ffcb05;
+$black: #000;
 $bg: #121212;
-$dark: #151515;
+$dark: #181818;
+$light: #fff;
 $grey: rgba(#fff, 0.7);
 $light_grey: #585c6a;
+$light_grey2: #eee;
 
 @function rem($px) {
   @return ($px / 16) + rem;

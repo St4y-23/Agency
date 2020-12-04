@@ -21,23 +21,9 @@ $(window).on('load', function () {
 	var tl5 = gsap.timeline({ defaults: { duration: 1 } });
 	tl5.from(".about__box-title", { delay: .8, y: '10%', opacity: 0 })
 		.from(".about__text", { y: '10%', opacity: 0 }, "-=.9")
-		.from(".about__btn-box", { y: '10%', opacity: 0 }, "-=.9")
+		.from(".about__btn-box", { y: '20%', opacity: 0 }, "-=.9")
 
-
-
-
-	if (window.matchMedia("(min-width: 851px)").matches) {
-
-		// var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
-
-
-
-	} else {
-
-
-
-	}
-
+	
 });
 
 
@@ -126,7 +112,7 @@ $(function () {
 			// portfolio
 			if (destination == 4) {
 				var tl4 = gsap.timeline({ defaults: { duration: 1 } });
-				tl4.from(".portfolio__item-hide", { delay: .5, height: '100%', stagger: 0.2 })
+				tl4.from(".portfolio__item-hide", { delay: .5, height: '101%', stagger: 0.2 })
 					.from(".portfolio__bgText span", { y: '110%' }, "-=1.8")
 					.from(".portfolio__btn-box", { y: '15%', opacity: 0 }, "-=1.8")
 					.from(".portfolio-button-prev", { opacity: 0 }, "-=.8")
@@ -425,6 +411,10 @@ $(function () {
 		document.querySelector('.team__title'),
 		document.querySelector('.contacts__title'),
 		document.querySelector('.contacts__text'),
+		document.querySelector('.services__title'),
+		document.querySelector('.services__text'),
+		document.querySelector('.works__title'),
+		document.querySelector('.works__text'),
 	];
 
 	var aboutInfoContacts = document.querySelectorAll('.aboutInfo__contacts-box');

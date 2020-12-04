@@ -20,7 +20,7 @@
   flex-direction: column;
   background-color: $dark;
   margin: 0 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid $light;
   position: relative;
   transition: linear 0.2s;
 
@@ -39,7 +39,7 @@
     }
 
     .aboutServices__icon{
-      fill: #eee;
+      fill: $light_grey2;
       transform: translate(-50%, -50%) rotate(360deg);
     }
     
@@ -80,7 +80,7 @@
 .aboutServices__logo{
   min-width: 40px;
   height: 40px;
-  background-color: #eee;
+  background-color: $light_grey2;
   border-radius: 50%;
   margin-right: 10px;
   position: relative;
@@ -103,7 +103,7 @@
 
 .aboutServices__text{
   margin-bottom: 1rem;
-  color: rgba(#fff, .7);
+  color: rgba($light, .7);
 }
 
 .aboutServices__link{
