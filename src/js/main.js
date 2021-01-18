@@ -542,10 +542,10 @@ $(function () {
 				jQuery(this).on('mouseleave', function () {
 					cursor.$el.removeClass('int-link');
 				});
-			}).on('mouseenter', '.slider', function () {
-				cursor.$el.addClass('int-grab-h');
+			}).on('mouseenter', '.team__slide', '.ourServices__item', '.portfolio__item', function () {
+				cursor.$el.addClass('int-link');
 				jQuery(this).on('mouseleave', function () {
-					cursor.$el.removeClass('int-grab-h');
+					cursor.$el.removeClass('int-link');
 				});
 			});
 		},
